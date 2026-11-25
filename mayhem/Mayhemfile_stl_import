@@ -1,0 +1,11 @@
+project: savantenvs/OpenVSP
+target: stl_import
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stl_import/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/stl_import
+    libfuzzer: true
+    timeout: 5

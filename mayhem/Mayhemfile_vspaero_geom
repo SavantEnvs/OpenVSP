@@ -1,0 +1,11 @@
+project: savantenvs/OpenVSP
+target: vspaero_geom
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vspaero_geom/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/vspaero_geom @@
+    afl: true
+    timeout: 5

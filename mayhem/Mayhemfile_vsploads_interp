@@ -1,0 +1,11 @@
+project: savantenvs/OpenVSP
+target: vsploads_interp
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vsploads_interp/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/vsploads_interp @@
+    afl: true
+    timeout: 5

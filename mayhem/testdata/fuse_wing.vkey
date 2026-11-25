@@ -1,0 +1,8 @@
+# VSPGEOM Tag Key File
+fuse_wing.vspgeom
+3
+
+# part#,geom#,surf#,gname,gid,thick,plate,symm,compid
+1,0,0,FuseGeom,FUSEAAAAAA,1,0,0,1
+2,1,0,WingGeom,WINGAAAAAA,1,0,0,2
+3,1,1,WingGeom,WINGAAAAAA,1,0,0,2

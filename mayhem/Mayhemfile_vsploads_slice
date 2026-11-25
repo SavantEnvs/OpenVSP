@@ -1,0 +1,11 @@
+project: savantenvs/OpenVSP
+target: vsploads_slice
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vsploads_slice/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/vsploads_slice @@
+    afl: true
+    timeout: 5

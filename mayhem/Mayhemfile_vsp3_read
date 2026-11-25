@@ -1,0 +1,11 @@
+project: savantenvs/OpenVSP
+target: vsp3_read
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vsp3_read/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/vsp3_read
+    libfuzzer: true
+    timeout: 10
